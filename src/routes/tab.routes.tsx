@@ -20,6 +20,7 @@ const TabRoutes: React.FC = () => (
         fontWeight: '600',
       },
       inactiveTintColor: '#B7B7CC',
+      tabStyle: { backgroundColor: '#222' },
     }}
   >
     <Tab.Screen
@@ -31,7 +32,7 @@ const TabRoutes: React.FC = () => (
       component={Dashboard}
     />
     <Tab.Screen
-      name="Orders"
+      name="Favorites"
       options={{
         tabBarIcon: ({ color }) => (
           <Icon size={25} name="shopping-bag" color={color} />
@@ -42,7 +43,7 @@ const TabRoutes: React.FC = () => (
     />
 
     <Tab.Screen
-      name="Favorites"
+      name="Orders"
       options={{
         tabBarIcon: ({ color }) => (
           <Icon size={25} name="heart" color={color} />
